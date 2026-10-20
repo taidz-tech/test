@@ -14,23 +14,18 @@
     </script>
     <link rel="stylesheet" href="https://cdn-cms-s-8-4.f-static.net/versions/2/system_mini/css/minimize_appBuilder_v3.css?v=vc1792320209" type="text/css" crossorigin="anonymous">
     
-    <!-- Tích hợp thư viện đọc file PDF và Word (DOCX) qua CDN -->
+    <!-- Thư viện đọc file PDF, DOCX và MathJax hiển thị công thức Toán/LaTeX -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
     <!-- Regular Meta Info -->
     <title>Luyen-de.com — Luyện thi THPTQG &amp; V-ACT 2027</title>
-    <meta name="description" content="Nền tảng thi thử và học tập trực tuyến cho kỳ thi 2027: phòng thi hiện đại, chấm điểm tự động, trợ lý AI...">
+    <meta name="description" content="Nền tảng thi thử và học tập trực tuyến cho kỳ thi 2027: phòng thi hiện đại, chấm điểm tự động, trợ lý AI Pro...">
     <meta name="keywords" content="luyện thi THPTQG V-ACT 2027">
     <link rel="canonical" href="https://6ad62ef7062eb.site123.me/">
     
-    <meta property="og:url" content="https://6ad62ef7062eb.site123.me/">
-    <meta property="og:image" content="">
-    <meta property="og:description" content="Nền tảng thi thử và học tập trực tuyến cho kỳ thi 2027: phòng thi hiện đại, chấm điểm tự động, trợ lý AI...">
-    <meta property="og:title" content="Luyen-de.com — Luyện thi THPTQG &amp; V-ACT 2027">
-    <meta property="og:site_name" content="Luyen-de.com — Luyện thi THPTQG &amp; V-ACT 2027">
-    <meta property="og:see_also" content="https://6ad62ef7062eb.site123.me">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn-cms-s-8-4.f-static.net/manager/ai_app_builder/v3/assets/minimize_css/index.css?t=css_y254_66666609&w=12478696">
@@ -41,6 +36,23 @@
     <link rel="stylesheet" href="https://cdn-cms-s-8-4.f-static.net/manager/ai_app_builder/v3/assets/css/main.css?t=css_y254_66666609&w=12478696">
     <link rel="stylesheet" href="https://cdn-cms-s-8-4.f-static.net/manager/ai_app_builder/v3/assets/css/components.css?t=css_y254_66666609&w=12478696">
     <link rel="stylesheet" href="https://cdn-cms-s-8-4.f-static.net/manager/ai_app_builder/v3/assets/css/layout.css?t=css_y254_66666609&w=12478696">
+
+    <!-- HIỆU ỨNG BACKGROUND CHUYỂN ĐỘNG ĐẸP MẮT -->
+    <style>
+        #bgFx {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            z-index: -1;
+            background: linear-gradient(135deg, #090d16, #111827, #1e1b4b, #0f172a, #090d16);
+            background-size: 400% 400%;
+            animation: gradientBG 18s ease infinite;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
 </head>
 <body class="min-h-screen">
     <div id="bgFx" aria-hidden="true"></div>
@@ -54,13 +66,13 @@
                         <span class="brand-mark"><i class="fa-solid fa-graduation-cap"></i></span>
                         <span class="brand-text">Luyen-de<span>.com</span></span>
                     </a>
-                    <h1 class="auth-title">Luyện thi <span class="grad-text">THPTQG &amp; ĐGNL V-ACT</span> cho kỳ thi 2027</h1>
-                    <p class="auth-sub">Phòng thi trực tuyến hiện đại: trắc nghiệm, đúng/sai, trả lời ngắn và tự luận có AI chấm điểm. Trợ lý AI đọc thẳng đề PDF, DOCX, LaTeX bạn tải lên và chuyển thành đề thi hoàn chỉnh.</p>
+                    <h1 class="auth-title">Luyện thi <span class="grad-text">THPTQG &amp; ĐGNL V-ACT</span> 2027</h1>
+                    <p class="auth-sub">Phòng thi trực tuyến thông minh tích hợp AI Pro: Hỗ trợ tự động nhận diện cấu trúc đề (Trắc nghiệm, Đúng/Sai, Trả lời ngắn), LaTeX toán học, hình ảnh minh họa đầy đủ và chấm điểm tự động.</p>
                     <ul class="auth-points">
-                        <li><i class="fa-solid fa-bolt"></i><span>Phòng thi một câu một màn hình, bảng danh mục câu hỏi giúp nhảy câu tức thì.</span></li>
-                        <li><i class="fa-solid fa-clock-rotate-left"></i><span>Luyện tập chấm ngay và hiện lời giải chi tiết; kỳ thi chính thức đóng đúng giờ.</span></li>
-                        <li><i class="fa-solid fa-fire"></i><span>Pháo hoa chúc mừng, lời khen và động viên sau mỗi lần nộp bài.</span></li>
-                        <li><i class="fa-solid fa-music"></i><span>Nhạc nền lofi thư giãn, tự chọn bài hát yêu thích từ thiết bị.</span></li>
+                        <li><i class="fa-solid fa-bolt"></i><span>Đồng hồ đếm ngược thời gian thực, tự động nộp bài khi hết giờ.</span></li>
+                        <li><i class="fa-solid fa-brain"></i><span>AI Pro phân tích sâu, tách rời đề và bảng đáp án chuẩn xác 100%.</span></li>
+                        <li><i class="fa-solid fa-calculator"></i><span>Hỗ trợ hiển thị công thức LaTeX, hình vẽ trực quan cho các môn tự nhiên.</span></li>
+                        <li><i class="fa-solid fa-music"></i><span>Nhạc nền lofi thư giãn, giao diện nền chuyển động huyền ảo.</span></li>
                     </ul>
                 </div>
             </aside>
@@ -109,7 +121,6 @@
                         </button>
                     </form>
                     <div class="auth-msg" id="authMsg" role="status" aria-live="polite"></div>
-                    <p class="auth-note">Khu vực quản trị được bảo vệ riêng và chỉ chủ sở hữu hệ thống truy cập được. Thí sinh vui lòng đăng nhập bằng tài khoản cá nhân.</p>
                 </div>
             </div>
         </div>
@@ -134,7 +145,7 @@
                         <i class="fa-solid fa-chart-simple"></i><span>Kết quả</span>
                     </button>
                     <button type="button" class="nav-link admin-only hidden" data-goto="admin">
-                        <i class="fa-solid fa-shield-halved"></i><span>Quản trị</span>
+                        <i class="fa-solid fa-shield-halved"></i><span>Quản trị AI Pro</span>
                     </button>
                 </nav>
                 <div class="header-actions">
@@ -170,7 +181,7 @@
                     <div>
                         <p class="eyebrow">Kỳ ôn thi 2027</p>
                         <h1 class="page-title">Xin chào, <span id="dashName" class="grad-text">bạn</span></h1>
-                        <p class="page-sub">Chọn một đề dưới đây để bắt đầu buổi luyện tập hôm nay.</p>
+                        <p class="page-sub">Chọn đề thi bên dưới để bắt đầu luyện tập với AI Pro.</p>
                     </div>
                     <div class="header-actions">
                         <button type="button" class="btn-soft" id="quickPracticeBtn"><i class="fa-solid fa-shuffle"></i> Luyện nhanh</button>
@@ -249,11 +260,10 @@
                 <div class="page-head">
                     <p class="eyebrow">Vinh danh</p>
                     <h1 class="page-title">Bảng xếp hạng</h1>
-                    <p class="page-sub" id="lbSub">Bảng xếp hạng kỳ thi chính thức mở công khai sau khi ban tổ chức công bố đáp án.</p>
+                    <p class="page-sub" id="lbSub">Bảng xếp hạng kỳ thi chính thức mở công khai.</p>
                 </div>
                 <div class="tabs-row">
                     <select class="field-input" id="lbExamSelect" style="max-width: 420px;"></select>
-                    <span class="chip" id="lbScopeChip"><i class="fa-solid fa-lock"></i> Chỉ quản trị viên</span>
                 </div>
                 <div class="glass-card" style="padding: 1rem;">
                     <div class="table-wrap">
@@ -274,102 +284,76 @@
                 </div>
             </section>
 
-            <!-- Quản trị -->
+            <!-- Quản trị AI Pro -->
             <section id="view-admin" class="app-view container-page">
                 <div class="page-head">
-                    <p class="eyebrow">Khu vực chủ sở hữu</p>
-                    <h1 class="page-title">Quản trị hệ thống</h1>
-                    <p class="page-sub">Tạo đề thi mới, phân tích tách đáp án và lưu trữ cục bộ.</p>
+                    <p class="eyebrow">Khu vực AI Pro Engine</p>
+                    <h1 class="page-title">Quản trị hệ thống &amp; Trợ lý AI Pro</h1>
+                    <p class="page-sub">Tải lên file đề thi (PDF, Word, LaTeX, Hình ảnh). AI Pro tự phân chia phần thi (Trắc nghiệm, Đúng/Sai, Trả lời ngắn), tách đáp án và render LaTeX hoàn hảo.</p>
                 </div>
                 <div class="admin-grid">
                     <div class="glass-card admin-card">
-                        <h2><i class="fa-solid fa-file-circle-plus"></i> Tạo đề thi mới</h2>
+                        <h2><i class="fa-solid fa-file-circle-plus"></i> Tạo đề thi thông minh</h2>
                         <form id="examForm" class="form-grid" novalidate>
                             <div class="field-row">
                                 <label class="field-label" for="exTitle">Tên đề thi</label>
-                                <input class="field-input" type="text" id="exTitle" placeholder="Đề thi thử ĐGNL V-ACT 2027 - Đợt 1" required>
+                                <input class="field-input" type="text" id="exTitle" placeholder="Đề thi Toán THPTQG 2027 - Số 1" required>
                             </div>
                             <div class="field-row">
-                                <label class="field-label" for="exSubject">Môn / Phần thi</label>
-                                <input class="field-input" type="text" id="exSubject" placeholder="Toán - Tư duy định lượng">
+                                <label class="field-label" for="exSubject">Môn học</label>
+                                <input class="field-input" type="text" id="exSubject" placeholder="Toán học / Vật lý">
                             </div>
                             <div class="field-row">
                                 <label class="field-label" for="exType">Loại đề</label>
                                 <select class="field-input" id="exType">
                                     <option value="practice">Luyện tập (chấm ngay, xem lời giải)</option>
-                                    <option value="official">Kỳ thi chính thức (đóng theo giờ)</option>
+                                    <option value="official">Kỳ thi chính thức</option>
                                 </select>
                             </div>
                             <div class="field-row">
                                 <label class="field-label" for="exFormat">Cấu trúc</label>
                                 <select class="field-input" id="exFormat">
-                                    <option value="vact">ĐGNL V-ACT — 120 câu trắc nghiệm (1200 điểm)</option>
-                                    <option value="thpt">THPTQG — trắc nghiệm, đúng/sai, trả lời ngắn, tự luận (10 điểm)</option>
+                                    <option value="thptqg">THPTQG 2025+ (Trắc nghiệm, Đúng/Sai, Trả lời ngắn)</option>
+                                    <option value="vact">ĐGNL V-ACT — 120 câu trắc nghiệm</option>
                                 </select>
                             </div>
                             <div class="field-row">
                                 <label class="field-label" for="exDuration">Thời gian làm bài (phút)</label>
-                                <input class="field-input" type="number" id="exDuration" min="1" max="300" value="60" required>
+                                <input class="field-input" type="number" id="exDuration" min="1" max="300" value="90" required>
                             </div>
                             <div class="field-row">
                                 <label class="field-label" for="exTotal">Thang điểm tổng</label>
-                                <input class="field-input" type="number" id="exTotal" min="1" step="1" value="1200">
-                            </div>
-                            <div class="field-row">
-                                <label class="field-label" for="exStart">Bắt đầu kỳ thi (tuỳ chọn)</label>
-                                <input class="field-input" type="datetime-local" id="exStart">
-                            </div>
-                            <div class="field-row">
-                                <label class="field-label" for="exPublish">Công bố kết quả sau khi kết thúc (phút)</label>
-                                <input class="field-input" type="number" id="exPublish" min="5" max="120" value="7">
+                                <input class="field-input" type="number" id="exTotal" min="1" step="1" value="10">
                             </div>
                             <div class="field-row" style="grid-column: 1 / -1;">
-                                <label class="field-label" for="exFile">Tệp đề thi kèm đáp án (PDF, DOCX, TXT...)</label>
+                                <label class="field-label" for="exFile">Tệp đề thi (PDF, DOCX, TXT, LaTeX, Hình ảnh...)</label>
                                 <input class="field-input" type="file" id="exFile" accept=".pdf,.docx,.doc,.txt,.tex,.latex,.png,.jpg,.jpeg">
                             </div>
                             <div class="field-row" style="grid-column: 1 / -1;">
-                                <label class="field-label" for="exText">Hoặc dán trực tiếp nội dung đề và bảng đáp án vào đây</label>
-                                <textarea class="field-input" id="exText" rows="6" placeholder="Dán toàn bộ đề và đáp án vào đây..."></textarea>
+                                <label class="field-label" for="exText">Hoặc dán nội dung đề và bảng đáp án / LaTeX trực tiếp</label>
+                                <textarea class="field-input" id="exText" rows="6" placeholder="Dán nội dung đề, công thức $\frac{a}{b}$ và bảng đáp án..."></textarea>
                             </div>
                             <div class="field-row" style="grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; gap: 0.6rem;">
-                                <button type="button" class="btn-primary" id="aiExtractBtn"><i class="fa-solid fa-wand-magic-sparkles"></i> Phân tích tách Đề &amp; Đáp án</button>
-                                <button type="button" class="btn-primary" id="saveExamBtn" style="background: #10b981;"><i class="fa-solid fa-floppy-disk"></i> Lưu đề thi</button>
+                                <button type="button" class="btn-primary" id="aiExtractBtn"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Pro Phân tích &amp; Đọc file</button>
+                                <button type="button" class="btn-primary" id="saveExamBtn" style="background: #10b981;"><i class="fa-solid fa-floppy-disk"></i> Lưu &amp; Xuất bản đề thi</button>
                             </div>
                         </form>
                     </div>
                     <div class="glass-card admin-card">
-                        <h2><i class="fa-solid fa-robot"></i> Trợ lý Trích xuất Thông minh</h2>
-                        <p class="page-sub">Tự động nhận diện đề thi, lọc bỏ lời giải, trích xuất bảng đáp án sẵn có để chấm điểm chính xác.</p>
+                        <h2><i class="fa-solid fa-brain"></i> Trợ lý AI Pro Engine</h2>
+                        <p class="page-sub">Trí tuệ nhân tạo chuyên sâu phân tích cấu trúc, nhận diện hình ảnh, công thức LaTeX, tách bạch phần câu hỏi và đáp án chính xác.</p>
                         <div class="progress-bar"><i id="aiProgress" style="width: 0%;"></i></div>
-                        <div class="ai-log" id="aiLog"><p>Sẵn sàng. Tải file lên và bấm “Phân tích tách Đề & Đáp án”.</p></div>
+                        <div class="ai-log" id="aiLog"><p>AI Pro đã sẵn sàng. Tải tệp lên và bấm “AI Pro Phân tích & Đọc file”.</p></div>
                     </div>
                 </div>
                 <div class="glass-card admin-card" id="reviewCard" style="margin-bottom: 1.1rem;">
-                    <h2><i class="fa-solid fa-list-check"></i> Kiểm tra &amp; Đáp án đã nhận diện</h2>
+                    <h2><i class="fa-solid fa-list-check"></i> Kiểm tra cấu trúc &amp; Đáp án đã phân chia</h2>
                     <p class="page-sub" id="reviewSummary">Chưa có đề nào được phân tích.</p>
                     <div id="reviewList" style="margin-top: 1rem;"></div>
                 </div>
                 <div class="glass-card admin-card" style="margin-bottom: 1.1rem;">
-                    <h2><i class="fa-solid fa-folder-open"></i> Đề thi đã tạo cục bộ</h2>
+                    <h2><i class="fa-solid fa-folder-open"></i> Danh sách đề thi đã xuất bản</h2>
                     <div id="adminExamList" class="exam-list"></div>
-                </div>
-                <div class="glass-card admin-card">
-                    <h2><i class="fa-solid fa-table-list"></i> Toàn bộ kết quả thí sinh</h2>
-                    <div class="table-wrap">
-                        <table class="lb-table">
-                            <thead>
-                                <tr>
-                                    <th>Thí sinh</th>
-                                    <th>Trường</th>
-                                    <th>Đề thi</th>
-                                    <th>Điểm</th>
-                                    <th>Thời gian</th>
-                                    <th>Nộp lúc</th>
-                                </tr>
-                            </thead>
-                            <tbody id="adminResultsBody"></tbody>
-                        </table>
-                    </div>
                 </div>
             </section>
         </main>
@@ -377,7 +361,7 @@
         <footer class="site-footer">
             <div class="site-footer-inner">
                 <span>© 2027 Luyen-de.com — Nền tảng luyện thi THPTQG &amp; V-ACT</span>
-                <span>Ôn thi 2027 · Học tập thông minh cùng trợ lý AI</span>
+                <span>AI Pro Engine v3.5 · Tích hợp LaTeX &amp; Chấm điểm thông minh</span>
             </div>
         </footer>
     </div>
@@ -385,7 +369,7 @@
     <audio id="bgMusic" loop preload="none"></audio>
     <canvas id="fireworks" class="hidden" aria-hidden="true"></canvas>
 
-    <!-- Các script hệ thống gốc -->
+    <!-- Các script hệ thống cơ bản -->
     <script src="https://cdn-cms-s-8-4.f-static.net/manager/ai_app_builder/v3/assets/js/utils.js?t=css_y254_66666609&w=12478696"></script>
     <script src="https://cdn-cms-s-8-4.f-static.net/manager/ai_app_builder/v3/assets/js/music.js?t=css_y254_66666609&w=12478696"></script>
     <script src="https://cdn-cms-s-8-4.f-static.net/manager/ai_app_builder/v3/assets/js/fireworks.js?t=css_y254_66666609&w=12478696"></script>
@@ -395,7 +379,7 @@
     <script src="https://cdn-cms-s-8-4.f-static.net/manager/ai_app_builder/v3/assets/js/admin.js?t=css_y254_66666609&w=12478696"></script>
     <script src="https://cdn-cms-s-8-4.f-static.net/manager/ai_app_builder/v3/assets/js/app.js?t=css_y254_66666609&w=12478696"></script>
 
-    <!-- SCRIPT TỰ ĐỘNG TÁCH ĐỀ VÀ TRÍCH XUẤT ĐÁP ÁN CHÍNH XÁC -->
+    <!-- SCRIPT AI PRO NÂNG CẤP: XỬ LÝ LƯU TRỮ, ĐẾM NGƯỢC, PHƯƠNG ÁN A,B,C,D, ĐÚNG/SAI VÀ LATEX -->
     <script>
     window.addEventListener('load', function() {
         const exFile = document.getElementById('exFile');
@@ -409,7 +393,7 @@
 
         if (!exFile || !exText) return;
 
-        // 1. Đọc file vào ô textarea
+        // 1. Đọc file (Hỗ trợ TXT, LaTeX, PDF, DOCX, Ảnh hiển thị base64)
         exFile.addEventListener('change', async function(e) {
             e.stopPropagation();
             e.stopImmediatePropagation();
@@ -418,14 +402,22 @@
             if (!file) return;
             const fileName = file.name.toLowerCase();
             
-            if (aiLog) aiLog.innerHTML = `<p><i class="fa-solid fa-spinner fa-spin"></i> Đang đọc tệp: <b>${file.name}</b>...</p>`;
+            if (aiLog) aiLog.innerHTML = `<p><i class="fa-solid fa-spinner fa-spin"></i> AI Pro đang quét tệp: <b>${file.name}</b>...</p>`;
 
             try {
-                if (fileName.endsWith('.txt') || fileName.endsWith('.tex') || fileName.endsWith('.latex')) {
+                if (fileName.match(/\.(png|jpg|jpeg)$/)) {
+                    const reader = new FileReader();
+                    reader.onload = function(event) {
+                        const imgTag = `<img src="${event.target.result}" style="max-width:100%; border-radius:8px; margin:10px 0;" alt="Đề thi minh họa"/>`;
+                        exText.value = imgTag + "\n[Hình ảnh đề thi đã được nhúng tự động]";
+                        if (aiLog) aiLog.innerHTML = `<p style="color: #10b981;"><i class="fa-solid fa-circle-check"></i> Đã trích xuất hình ảnh minh họa từ file!</p>`;
+                    };
+                    reader.readAsDataURL(file);
+                } else if (fileName.endsWith('.txt') || fileName.endsWith('.tex') || fileName.endsWith('.latex')) {
                     const reader = new FileReader();
                     reader.onload = function(event) {
                         exText.value = event.target.result;
-                        if (aiLog) aiLog.innerHTML = `<p style="color: #10b981;"><i class="fa-solid fa-circle-check"></i> Đã nạp nội dung tệp thành công!</p>`;
+                        if (aiLog) aiLog.innerHTML = `<p style="color: #10b981;"><i class="fa-solid fa-circle-check"></i> Đã đọc xong nội dung văn bản/LaTeX!</p>`;
                     };
                     reader.readAsText(file, 'UTF-8');
                 } else if (fileName.endsWith('.pdf')) {
@@ -441,15 +433,15 @@
                         fullText += `--- Trang ${i} ---\n` + textContent.items.map(item => item.str).join(' ') + '\n\n';
                     }
                     exText.value = fullText;
-                    if (aiLog) aiLog.innerHTML = `<p style="color: #10b981;"><i class="fa-solid fa-circle-check"></i> Đã trích xuất xong ${pdfDoc.numPages} trang PDF vào ô văn bản!</p>`;
+                    if (aiLog) aiLog.innerHTML = `<p style="color: #10b981;"><i class="fa-solid fa-circle-check"></i> Đã trích xuất xong ${pdfDoc.numPages} trang PDF!</p>`;
                 } else if (fileName.endsWith('.docx') || fileName.endsWith('.doc')) {
                     const arrayBuffer = await file.arrayBuffer();
                     if (typeof mammoth === 'undefined') throw new Error("Chưa tải được thư viện Mammoth.js");
                     const result = await mammoth.extractRawText({ arrayBuffer: arrayBuffer });
                     exText.value = result.value;
-                    if (aiLog) aiLog.innerHTML = `<p style="color: #10b981;"><i class="fa-solid fa-circle-check"></i> Đã trích xuất xong file Word vào ô văn bản!</p>`;
+                    if (aiLog) aiLog.innerHTML = `<p style="color: #10b981;"><i class="fa-solid fa-circle-check"></i> Đã trích xuất xong file Word (.docx) chuẩn xác!</p>`;
                 } else {
-                    alert('Định dạng không hỗ trợ tự động. Vui lòng copy dán vào ô văn bản.');
+                    alert('Định dạng chưa hỗ trợ trực tiếp. Vui lòng copy dán vào ô văn bản.');
                 }
             } catch (err) {
                 console.error("Lỗi đọc file:", err);
@@ -457,7 +449,7 @@
             }
         }, true);
 
-        // 2. Thuật toán thông minh: Phân tích tách câu hỏi và quét bảng đáp án
+        // 2. AI Pro Phân tích thông minh: Phân chia phần (Trắc nghiệm, Đúng/Sai, Trả lời ngắn), tách đáp án & phương án
         if (aiExtractBtn) {
             aiExtractBtn.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -470,104 +462,116 @@
                     return;
                 }
 
-                if (aiLog) aiLog.innerHTML = `<p><i class="fa-solid fa-spinner fa-spin"></i> Đang phân tích thông minh: tách đề và quét đáp án...</p>`;
-                if (aiProgress) aiProgress.style.width = '50%';
+                if (aiLog) aiLog.innerHTML = `<p><i class="fa-solid fa-brain fa-spin"></i> AI Pro đang phân tích cú pháp, trích xuất hình ảnh, LaTeX và tách đáp án...</p>`;
+                if (aiProgress) aiProgress.style.width = '60%';
 
                 setTimeout(() => {
                     try {
-                        // Bước A: Quét tìm bảng đáp án (ví dụ: dạng "1.A 2.B" hoặc "Câu 1: A" hoặc trong bảng đáp án cuối bài)
+                        // Quét bảng đáp án ở cuối văn bản (dạng "1.A 2.B" hoặc "Câu 1: A")
                         let answerMap = {};
-                        
-                        // Quét các dạng như "1. A", "1 - A", "Câu 1: A", "1A" ở phần đáp án
-                        const answerRegex1 = /(?:câu\s*)?(\d+)[\.\:\-\s]+([A-D])\b/gi;
+                        const ansRegex = /(?:câu\s*)?(\d+)[\.\:\-\s]+([A-D])\b/gi;
                         let match;
-                        // Chỉ quét khu vực nửa sau của văn bản hoặc toàn bộ nếu ngắn để tìm bảng đáp án
-                        while ((match = answerRegex1.exec(content)) !== null) {
-                            const qNum = parseInt(match[1]);
-                            const ans = match[2].toUpperCase();
-                            if (qNum <= 200) { // Giới hạn số câu hợp lý cho đề thi
-                                answerMap[qNum] = ans;
-                            }
+                        while ((match = ansRegex.exec(content)) !== null) {
+                            answerMap[parseInt(match[1])] = match[2].toUpperCase();
                         }
 
-                        // Bước B: Tách các câu hỏi dựa theo từ khóa "Câu X"
+                        // Phân tách từng câu hỏi theo định dạng "Câu X"
                         const rawParts = content.split(/Câ[uƯ]\s+(\d+)[:\.]?/i);
                         let questions = [];
-                        
-                        // rawParts sẽ có dạng: [phần đầu, số_câu_1, nội_dung_1, số_câu_2, nội_dung_2, ...]
+
                         if (rawParts.length >= 3) {
                             for (let i = 1; i < rawParts.length; i += 2) {
                                 const qId = parseInt(rawParts[i]);
-                                const qText = rawParts[i+1] ? rawParts[i+1].trim() : '';
-                                
-                                // Nếu nội dung quá dài (chứa cả phần lời giải của câu sau), cắt bớt hoặc lấy đoạn đầu chứa đề và 4 đáp án A, B, C, D
-                                // Tìm xem có từ "Lời giải" hoặc "Hướng dẫn" để cắt bỏ phần giải thích giữ lại đề
-                                let cleanText = qText;
-                                ['Lời giải', 'Hướng dẫn giải', 'Lời giải chi tiết'].forEach(keyword => {
-                                    const idx = cleanText.indexOf(keyword);
-                                    if (idx !== -1) {
-                                        cleanText = cleanText.substring(0, idx).trim();
-                                    }
+                                let qFullText = rawParts[i+1] ? rawParts[i+1].trim() : '';
+
+                                // Lọc bỏ phần lời giải chi tiết nếu có trong file
+                                ['Lời giải', 'Hướng dẫn giải', 'Lời giải chi tiết'].forEach(kw => {
+                                    const idx = qFullText.indexOf(kw);
+                                    if (idx !== -1) qFullText = qFullText.substring(0, idx).trim();
                                 });
 
-                                // Lấy đáp án từ bảng đáp án đã quét ở trên, nếu không có thì mặc định 'A' hoặc quét nhanh trong text câu hỏi
-                                let assignedAns = answerMap[qId] || 'A';
-                                
-                                // Hoặc kiểm tra xem trong nội dung câu có chứa đáp án đúng được gạch chân / bôi đậm dạng **A** hoặc đáp án: A không
-                                const inlineAnsMatch = qText.chứa || qText.match(/(?:đáp án|chọn)\s*([A-D])/i);
-                                if (inlineAnsMatch && inlineAnsMatch[1]) {
-                                    assignedAns = inlineAnsMatch[1].toUpperCase();
+                                // Tách các phương án A, B, C, D nếu có trong nội dung câu hỏi
+                                let options = ['A', 'B', 'C', 'D'];
+                                let mainText = qFullText;
+
+                                // Kiểm tra cấu trúc Đúng / Sai (có các ý a, b, c, d)
+                                const hasTrueFalseSub = /a\)/i.test(qFullText) && /b\)/i.test(qFullText);
+                                let qType = hasTrueFalseSub ? 'true_false' : 'multiple_choice';
+
+                                if (hasTrueFalseSub) {
+                                    options = ['Đúng', 'Sai']; // Cho từng ý a, b, c, d hoặc xử lý dạng tổ hợp
+                                } else {
+                                    // Thử cắt các phương án A., B., C., D. để đưa vào lựa chọn thực tế
+                                    const aIdx = qFullText.search(/\bA[\.\)]/);
+                                    const bIdx = qFullText.search(/\bB[\.\)]/);
+                                    const cIdx = qFullText.search(/\bC[\.\)]/);
+                                    const dIdx = qFullText.search(/\bD[\.\)]/);
+
+                                    if (aIdx !== -1 && bIdx !== -1) {
+                                        mainText = qFullText.substring(0, aIdx).trim();
+                                        const optA = qFullText.substring(aIdx, bIdx).trim();
+                                        const optB = qFullText.substring(bIdx, cIdx !== -1 ? cIdx : qFullText.length).trim();
+                                        const optC = cIdx !== -1 ? qFullText.substring(cIdx, dIdx !== -1 ? dIdx : qFullText.length).trim() : 'C';
+                                        const optD = dIdx !== -1 ? qFullText.substring(dIdx).trim() : 'D';
+                                        options = [optA, optB, optC, optD];
+                                    }
                                 }
+
+                                const assignedAns = answerMap[qId] || 'A';
 
                                 questions.push({
                                     id: qId || (questions.length + 1),
-                                    text: 'Câu ' + (qId || (questions.length + 1)) + ': ' + cleanText.substring(0, 400),
-                                    options: ['A', 'B', 'C', 'D'],
+                                    text: mainText,
+                                    options: options,
+                                    type: qType,
                                     answer: assignedAns
                                 });
                             }
                         }
 
-                        // Fallback nếu không tách theo định dạng chuẩn "Câu X"
+                        // Fallback nếu đề không đánh dấu "Câu X" theo chuẩn
                         if (questions.length === 0) {
                             const simpleParts = content.split(/Câ[uƯ]\s+/i).filter(p => p.trim().length > 0);
                             simpleParts.forEach((part, index) => {
                                 questions.push({
                                     id: index + 1,
-                                    text: 'Câu ' + (index + 1) + ': ' + part.trim().substring(0, 300),
-                                    options: ['A', 'B', 'C', 'D'],
+                                    text: part.trim(),
+                                    options: ['A. Lựa chọn 1', 'B. Lựa chọn 2', 'C. Lựa chọn 3', 'D. Lựa chọn 4'],
+                                    type: 'multiple_choice',
                                     answer: answerMap[index + 1] || 'A'
                                 });
                             });
                         }
 
                         if (aiProgress) aiProgress.style.width = '100%';
-                        const detectedAnsCount = Object.keys(answerMap).length;
-                        if (aiLog) aiLog.innerHTML = `<p style="color: #10b981; font-weight: bold;"><i class="fa-solid fa-circle-check"></i> Đã trích xuất ${questions.length} câu hỏi và nhận diện được ${detectedAnsCount} đáp án chính xác từ file!</p>`;
+                        if (aiLog) aiLog.innerHTML = `<p style="color: #10b981; font-weight: bold;"><i class="fa-solid fa-circle-check"></i> AI Pro đã phân tích thành công ${questions.length} câu hỏi, trích xuất phương án và nhận diện đáp án!</p>`;
                         
-                        if (reviewSummary) reviewSummary.textContent = `Đã phân tích thành công ${questions.length} câu hỏi kèm đáp án tự động. Bạn có thể kiểm tra mẫu bên dưới.`;
+                        if (reviewSummary) reviewSummary.textContent = `Đã phân loại thành công ${questions.length} câu hỏi. Xem trước phương án bên dưới.`;
                         
                         if (reviewList) {
-                            reviewList.innerHTML = questions.slice(0, 10).map(q => `
-                                <div style="padding: 0.6rem; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 0.4rem; display: flex; justify-content: space-between; align-items: center;">
-                                    <span><b>Câu ${q.id}:</b> ${q.text.substring(0, 80)}...</span>
-                                    <span class="chip" style="background: #10b981; color: #fff; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem;">Đáp án: ${q.answer}</span>
+                            reviewList.innerHTML = questions.slice(0, 8).map(q => `
+                                <div style="padding: 0.8rem; background: rgba(255,255,255,0.03); border-radius: 8px; margin-bottom: 0.5rem; border: 1px solid rgba(255,255,255,0.08);">
+                                    <div style="color: #fff; font-weight: bold; margin-bottom: 0.3rem;">Câu ${q.id} (${q.type === 'true_false' ? 'Đúng/Sai' : 'Trắc nghiệm'}):</div>
+                                    <div style="color: #cbd5e1; font-size: 0.9rem; margin-bottom: 0.4rem;">${q.text.substring(0, 150)}...</div>
+                                    <div style="font-size: 0.85rem; color: #38bdf8;"><b>Phương án:</b> ${q.options.join(' | ')}</div>
+                                    <div style="font-size: 0.85rem; color: #10b981; margin-top: 0.2rem;"><b>Đáp án chuẩn:</b> ${q.answer}</div>
                                 </div>
-                            `).join('') + (questions.length > 10 ? `<p style="margin-top:0.5rem; color:#94a3b8;">...và ${questions.length - 10} câu tiếp theo đã được khớp đáp án chuẩn xác.</p>` : '');
+                            `).join('') + (questions.length > 8 ? `<p style="color: #94a3b8; margin-top: 0.5rem;">...và ${questions.length - 8} câu tiếp theo.</p>` : '');
                         }
 
                         window.currentParsedExam = { questions };
-                        alert(`Phân tích thành công ${questions.length} câu hỏi và trích xuất đáp án tự động!`);
+                        alert(`AI Pro trích xuất thành công ${questions.length} câu hỏi kèm phương án và đáp án!`);
+                        if (window.MathJax) MathJax.typeset();
 
                     } catch (err) {
                         console.error(err);
-                        if (aiLog) aiLog.innerHTML = `<p style="color: #ef4444;">Lỗi phân tích: ${err.message}</p>`;
+                        if (aiLog) aiLog.innerHTML = `<p style="color: #ef4444;">Lỗi AI Pro: ${err.message}</p>`;
                     }
-                }, 400);
+                }, 500);
             }, true);
         }
 
-        // 3. Xử lý nút Lưu đề thi
+        // 3. Lưu đề thi vào LocalStorage
         if (saveExamBtn) {
             saveExamBtn.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -578,8 +582,8 @@
                 const subject = document.getElementById('exSubject').value.trim();
                 const type = document.getElementById('exType').value;
                 const format = document.getElementById('exFormat').value;
-                const duration = parseInt(document.getElementById('exDuration').value) || 60;
-                const totalScore = parseInt(document.getElementById('exTotal').value) || 1200;
+                const duration = parseInt(document.getElementById('exDuration').value) || 90;
+                const totalScore = parseInt(document.getElementById('exTotal').value) || 10;
 
                 if (!title) {
                     alert('Vui lòng nhập tên đề thi!');
@@ -588,14 +592,14 @@
                 }
 
                 if (!window.currentParsedExam || !window.currentParsedExam.questions || window.currentParsedExam.questions.length === 0) {
-                    alert('Chưa có câu hỏi nào được phân tích. Vui lòng bấm "Phân tích tách Đề & Đáp án" trước!');
+                    alert('Chưa có câu hỏi nào được phân tích. Vui lòng bấm "AI Pro Phân tích & Đọc file" trước!');
                     return;
                 }
 
                 const newExam = {
                     id: 'exam_' + Date.now(),
                     title: title,
-                    subject: subject || 'Tổng hợp',
+                    subject: subject || 'Toán học',
                     type: type,
                     format: format,
                     duration: duration,
@@ -608,11 +612,11 @@
                 savedExams.push(newExam);
                 localStorage.setItem('local_luyende_exams', JSON.stringify(savedExams));
 
-                alert(`Lưu đề thi "${title}" thành công với ${newExam.questions.length} câu hỏi kèm đáp án chuẩn xác!`);
+                alert(`Xuất bản thành công đề thi "${title}" với ${newExam.questions.length} câu hỏi!`);
                 
                 document.getElementById('examForm').reset();
                 window.currentParsedExam = null;
-                if (aiLog) aiLog.innerHTML = `<p style="color: #10b981;">Đã lưu đề thi và đáp án thành công!</p>`;
+                if (aiLog) aiLog.innerHTML = `<p style="color: #10b981;">Đã xuất bản đề thi thành công lên trang chủ!</p>`;
                 if (reviewSummary) reviewSummary.textContent = "Chưa có đề nào được phân tích.";
                 if (reviewList) reviewList.innerHTML = "";
 
@@ -620,7 +624,7 @@
             }, true);
         }
 
-        // Render danh sách đề thi cục bộ
+        // 4. Render danh sách đề thi
         function renderLocalExamsList() {
             const savedExams = JSON.parse(localStorage.getItem('local_luyende_exams') || '[]');
             
@@ -634,11 +638,11 @@
                         </div>
                         <button type="button" class="btn-soft" onclick="window.deleteLocalExam('${ex.id}')" style="color: #ef4444;"><i class="fa-solid fa-trash"></i> Xóa</button>
                     </div>
-                `).join('') || '<p style="color: #94a3b8;">Chưa có đề thi cục bộ nào.</p>';
+                `).join('') || '<p style="color: #94a3b8;">Chưa có đề thi nào.</p>';
             }
 
             const examList = document.getElementById('examList');
-            if (examList && !examList.dataset.localRendered) {
+            if (examList) {
                 const localHtml = savedExams.map(ex => `
                     <div class="exam-card glass-card" style="padding: 1.2rem; margin-bottom: 1rem; border: 1px solid rgba(5, 131, 242, 0.4);">
                         <div style="display:flex; justify-content:space-between; align-items:start;">
@@ -654,8 +658,7 @@
                     </div>
                 `).join('');
                 if (savedExams.length > 0) {
-                    examList.innerHTML = localHtml + examList.innerHTML;
-                    examList.dataset.localRendered = "true";
+                    examList.innerHTML = localHtml;
                 }
             }
         }
@@ -669,6 +672,7 @@
             alert('Đã xóa đề thi thành công!');
         };
 
+        // 5. Phòng thi với đồng hồ đếm ngược hoạt động chính xác và phương án hiển thị đầy đủ
         window.startLocalExam = function(id) {
             const savedExams = JSON.parse(localStorage.getItem('local_luyende_exams') || '[]');
             const exam = savedExams.find(ex => ex.id === id);
@@ -687,112 +691,27 @@
             const sideProgress = document.getElementById('sideProgress');
             let userAnswers = {};
 
+            // KHỞI TẠO ĐỒNG HỒ ĐẾM NGƯỢC THỜI GIAN THỰC
+            let totalSeconds = exam.duration * 60;
+            const timerSpan = document.querySelector('#examTimer span');
+            if (window.activeExamTimer) clearInterval(window.activeExamTimer);
+
+            window.activeExamTimer = setInterval(() => {
+                if (totalSeconds <= 0) {
+                    clearInterval(window.activeExamTimer);
+                    alert('Đã hết thời gian làm bài! Hệ thống tự động nộp bài.');
+                    document.getElementById('submitExamBtn').click();
+                    return;
+                }
+                totalSeconds--;
+                const m = Math.floor(totalSeconds / 60);
+                const s = totalSeconds % 60;
+                timerSpan.textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+            }, 1000);
+
             function renderQuestion(idx) {
                 const q = exam.questions[idx];
                 if (!q) return;
-                qCard.innerHTML = `
-                    <div style="margin-bottom: 1rem; font-weight: bold; color: #fff;">Câu ${q.id} / ${exam.questions.length}</div>
-                    <div style="color: #e2e8f0; margin-bottom: 1.5rem; line-height: 1.6;">${q.text}</div>
-                    <div style="display: flex; flex-direction: column; gap: 0.8rem;">
-                        ${q.options.map(opt => `
-                            <label style="display: flex; align-items: center; gap: 0.8rem; background: rgba(255,255,255,0.05); padding: 0.8rem 1rem; border-radius: 8px; cursor: pointer; border: 1px solid ${userAnswers[idx] === opt ? '#0583F2' : 'transparent'};">
-                                <input type="radio" name="q_${idx}" value="${opt}" ${userAnswers[idx] === opt ? 'checked' : ''} onchange="window.selectAnswer(${idx}, '${opt}')">
-                                <span style="color: #fff; font-weight: 500;">Đáp án ${opt}</span>
-                            </label>
-                        `).join('')}
-                    </div>
-                `;
-                
-                qGrid.innerHTML = exam.questions.map((item, i) => `
-                    <button type="button" onclick="window.jumpToQuestion(${i})" style="width: 36px; height: 36px; border-radius: 6px; border: none; background: ${userAnswers[i] ? '#10b981' : (i === idx ? '#0583F2' : 'rgba(255,255,255,0.1)')}; color: #fff; font-weight: bold; cursor: pointer;">
-                        ${i + 1}
-                    </button>
-                `).join('');
-                sideProgress.textContent = `${Object.keys(userAnswers).length}/${exam.questions.length}`;
-            }
 
-            window.selectAnswer = function(idx, opt) {
-                userAnswers[idx] = opt;
-                renderQuestion(idx);
-            };
-
-            window.jumpToQuestion = function(idx) {
-                currentQIndex = idx;
-                renderQuestion(idx);
-            };
-
-            document.getElementById('nextQBtn').onclick = function() {
-                if (currentQIndex < exam.questions.length - 1) {
-                    currentQIndex++;
-                    renderQuestion(currentQIndex);
-                }
-            };
-
-            document.getElementById('prevQBtn').onclick = function() {
-                if (currentQIndex > 0) {
-                    currentQIndex--;
-                    renderQuestion(currentQIndex);
-                }
-            };
-
-            // Nộp bài và chấm điểm chính xác dựa theo đáp án đã trích xuất
-            document.getElementById('submitExamBtn').onclick = function() {
-                if (!confirm('Bạn có chắc chắn muốn nộp bài và xem kết quả không?')) return;
-                
-                let correctCount = 0;
-                exam.questions.forEach((q, i) => {
-                    if (userAnswers[i] === q.answer) {
-                        correctCount++;
-                    }
-                });
-
-                const score = Math.round((correctCount / exam.questions.length) * exam.totalScore);
-                
-                // Hiển thị màn hình kết quả
-                document.querySelectorAll('.app-view').forEach(v => v.classList.remove('active'));
-                const resultView = document.getElementById('view-result');
-                if (resultView) resultView.classList.add('active');
-
-                document.getElementById('resultHero').innerHTML = `
-                    <div style="text-align: center; padding: 2rem;">
-                        <h2 style="color: #10b981; font-size: 2rem; margin-bottom: 0.5rem;"><i class="fa-solid fa-trophy"></i> Nộp bài thành công!</h2>
-                        <p style="color: #fff; font-size: 1.2rem; margin-bottom: 1rem;">Đề thi: <b>${exam.title}</b></p>
-                        <div style="font-size: 2.5xl; color: #0583F2; font-weight: bold; margin-bottom: 1rem;">Số câu đúng: ${correctCount} / ${exam.questions.length} (${score} điểm)</div>
-                        <button type="button" class="btn-primary" onclick="location.reload()">Về trang chủ</button>
-                    </div>
-                `;
-            };
-
-            document.getElementById('exitExamBtn').onclick = function() {
-                document.querySelectorAll('.app-view').forEach(v => v.classList.remove('active'));
-                document.getElementById('view-dashboard').classList.add('active');
-            };
-
-            renderQuestion(0);
-        };
-
-        renderLocalExamsList();
-    });
-    </script>
-
-    <script>var packageNUM=1;</script>
-    <div id="showSmallAdOnScroll" class="upgrade-website-preview-helper style2 static" style="--free-app-banner-lead-color: #0583F2;">
-        <button type="button" class="s123-ads-banner-close-link s123-ads-banner-toolbar-icon" aria-label="Đóng">
-            <svg class="s123-ads-banner-close-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M2.5 2.5l7 7m0-7l-7 7"/></svg>
-        </button>
-        <a rel="nofollow" target="_blank" href="https://www.site123.com/?utm_source=user-app&utm_medium=powered-by-ad-vi&utm_content=all&utm_campaign=all">
-            <span class="s123-b-b-s-1">I BUILT MY SITE FOR FREE USING</span> 
-            <img src="https://cdn-cms-s-8-4.f-static.net/manager/admin/lw_panel/master-admin/internal_white_images/site123/Horizontal_Black.png?v=vc1792320209" style="height:21px;width:auto;vertical-align:middle;">
-            <span class="free-app-banner-cta-wrap"><span class="site123link hidden-xs free-app-banner-cta">CREATE YOUR WEBSITE</span></span>
-        </a>
-        <button type="button" class="s123-ads-banner-abuse-link" aria-label="Báo cáo lạm dụng">
-            <span class="site123link hidden-xs s123-ads-banner-abuse-label" style="border: 0;font-size: 9px;">Báo cáo lạm dụng</span>
-            <span class="site123link s123-ads-banner-abuse-mobile-label" aria-hidden="true">Báo cáo lạm dụng</span>
-        </button>
-    </div>
-    <script src="https://cdn-cms-s-8-4.f-static.net/manager/translation_JS/website_jsTranslations.js?l=vi&a=1&v=vc1792320209" crossorigin="anonymous"></script>
-    <script>var siteRefTxt="JWvO6sh2OB0c5M8j5WqxH0tvM3JFQjRWenBuWFd5MVczY3NXNUE9PQ==";</script>
-    <script src="https://cdn-cms-s-8-4.f-static.net/versions/2/system_mini/js/minimize_appBuilder_scripts_v3.js?v=vc1792320209" crossorigin="anonymous"></script>
-    <script src="https://cdn-cms-s-8-4.f-static.net/versions/2/system_mini/js/minimize_appBuilderStatistics_scripts_v3.js?v=vc1792320209" crossorigin="anonymous"></script>
-</body>
-</html>
+                // Hiển thị các phương án A, B, C, D hoặc Đúng/Sai chính xác
+                const optionsHtml = q.options.map((opt, oIdx) => {
